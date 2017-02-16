@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="image_url_empty">#FFFFFF</color>
+    <color name="image_url_fail">#FF0000</color>
+    <color name="image_url_loading">#CCCCCC</color>
+
+</resources>
