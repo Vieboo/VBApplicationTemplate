@@ -6,18 +6,16 @@ import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.download.ImageDownloader;
 import com.nostra13.universalimageloader.core.listener.PauseOnScrollListener;
 import com.vb.apptempl.R;
-import com.vb.apptempl.ui.base.BaseActivity;
+import com.vb.apptempl.base.BaseActivity;
 import com.vb.imageloader.ImageLoaderHelper;
 import com.vb.titlebar.TitleBar;
 
@@ -25,7 +23,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * Created by Vieboo on 2017/2/9 0009.

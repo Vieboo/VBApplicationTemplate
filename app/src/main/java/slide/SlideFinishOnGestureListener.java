@@ -8,7 +8,7 @@ import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 
-import com.vb.apptempl.ui.base.BaseActivity;
+import com.vb.apptempl.base.BaseActivity;
 
 
 public class SlideFinishOnGestureListener implements OnGestureListener {

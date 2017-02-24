@@ -59,7 +59,9 @@ dependencies {
     compile 'com.umeng.analytics:analytics:latest.integration'
     compile 'de.hdodenhof:circleimageview:2.1.0'
     compile 'org.greenrobot:eventbus:3.0.0'
+
     compile project(':imageloader')
     compile project(':titlebar')
     compile project(':utilslib')
+    compile project(':httpretrofit')
 }

@@ -14,6 +14,7 @@ import android.text.TextUtils;
 
 import com.blankj.utilcode.utils.AppUtils;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.vb.apptempl.http.HttpRetrofitHelper;
 import com.vb.imageloader.ImageLoaderHelper;
 
 import java.io.File;
@@ -33,8 +34,14 @@ public class App extends MultiDexApplication implements Handler.Callback {
     public int client_version_code;// 版本号
     public String client_device_id;// //设备ID
 
+    private static HttpRetrofitHelper httpRetrofitHelper;
+
     public static App getInstance() {
         return instance;
+    }
+
+    public static HttpRetrofitHelper getHttpRetrofitHelper() {
+        return httpRetrofitHelper;
     }
 
     /**
@@ -64,6 +71,7 @@ public class App extends MultiDexApplication implements Handler.Callback {
         initVersionAndID();
         try {
             ImageLoaderHelper.init(instance, IMAGE_CACHE_PATH);
+            httpRetrofitHelper = new HttpRetrofitHelper(this);
         } catch (IOException e) {
             e.printStackTrace();
         }

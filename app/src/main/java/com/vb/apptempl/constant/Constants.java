@@ -8,10 +8,10 @@ import java.io.File;
  * Created by Administrator on 2017/2/14 0014.
  */
 
-public class Constants {
+public interface Constants {
 
     //网络缓存
-    public static final String PATH_DATA = App.getInstance().getCacheDir().getAbsolutePath() + File.separator + "data";
-    public static final String PATH_CACHE = PATH_DATA + "/NetCache";
+    String PATH_DATA = App.getInstance().getCacheDir().getAbsolutePath() + File.separator + "data";
+    String PATH_CACHE = PATH_DATA + "/NetCache";
 
 }
